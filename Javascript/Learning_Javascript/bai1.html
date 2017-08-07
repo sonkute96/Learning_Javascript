@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Home </title>
+</head>
+<body>
+   <p id="textSayHello"/>
+   <script>
+   function myFunction(){
+      document.getElementById("textSayHello").innerHTML = "My First JavaScript";
+
+   }
+   </script>
+
+   <button id = "btnRelease" onclick="myFunction()"> Submit </button>
+
+   <script>
+       // write string down screen.
+       //document.write("Hello world");
+       // -- release notification
+
+       //alert("Hello wolrd");
+       // -- release log.
+       console.log("Hello world");
+
+       // -- concat string
+
+       var str = "Son" + " " + "Pham";
+
+       //alert(str);
+
+
+       // -- : == is used to compare 2 variables. it's automatic transfer type of variable.
+
+       // -- : === is used to compare 2 varibales. It's not automatic transfer type of variable.
+       // --- if 2 varibales have a different type => return false;
+       
+       //alert("0" == 0);
+
+       // --- 1 string + mot so sau thi cac so sau do se dc concat vao string
+
+       //alert("Hello thang " + 5 + 3);
+
+       //alert( 5 + 3 + " chao cac ban");
+
+
+       // ------ javascript arrays
+
+
+       var cars = ["Saab", "Volvo", "BMW"];
+
+       for (var i = 0; i < cars.length; i++){
+            document.write(cars[i] + " || ");
+       }
+
+       // --- javascript objects
+
+
+       var person = {firstName : "Son", lastName : "Pham", age : 21, eyeColor: "black"};
+
+       document.write(person.firstName);
+
+       // -- get primitive data
+
+       document.write( typeof true  );
+
+
+
+   </script>
+</body>
+</html>
